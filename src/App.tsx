@@ -16,12 +16,12 @@ const App = () => {
 
       {/* 在大屏幕显示 aside，且小屏幕隐藏 */}
       <Show above="lg">
-        <GridItem area="aside" bg="gold">
+        <GridItem area="aside" bg="">
           Aside
         </GridItem>
       </Show>
       {/* 在小屏幕显示 main，且隐藏 aside */}
-      <GridItem area="main" bg="dodgerblue">
+      <GridItem area="main" bg="">
         Main
       </GridItem>
     </Grid>
