@@ -1,6 +1,7 @@
 import { Grid, GridItem, Show} from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
+import GenreList from "./components/GenreList";
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
       {/* 在大屏幕显示 aside，且小屏幕隐藏 */}
       <Show above="lg">
         <GridItem area="aside" bg="">
-          Aside
+          <GenreList/>
         </GridItem>
       </Show>
       <GridItem area="main" bg="">
