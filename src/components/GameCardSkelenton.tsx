@@ -3,12 +3,11 @@ import React from 'react'
 
 function GameCardSkelenton() {
   return (
-    <Card width={'300px'} borderEndRadius={10} overflow="hidden">
+    <Card >
         <Skeleton height={'200px'} />
         <CardBody>
           <SkeletonText/>
         </CardBody>
-
     </Card>
   )
 }
