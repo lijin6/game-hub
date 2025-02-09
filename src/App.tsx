@@ -10,6 +10,10 @@ const App = () => {
         base: `"nav" "main"`, // 小屏幕：nav 在上，main 在下
         lg: `"nav nav" "aside main"`, // 大屏幕：nav 在上，aside 和 main 横向排布
       }}
+      templateColumns={{
+        base:'1rf',
+        lg:'200px',
+      }}
     >
       <GridItem area="nav">
         <NavBar />
@@ -17,7 +21,7 @@ const App = () => {
 
       {/* 在大屏幕显示 aside，且小屏幕隐藏 */}
       <Show above="lg">
-        <GridItem area="aside" bg="">
+        <GridItem area="aside" bg="" paddingX={"5"}>
           <GenreList/>
         </GridItem>
       </Show>
